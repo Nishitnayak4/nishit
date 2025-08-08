@@ -460,18 +460,18 @@ h3{
 }
 
 .spider-tony img {
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
 .doctor-strange {
     position: absolute;
     top: 450px; /* kitna upar latkana hai */
-    left: -32px; /* kitna side me shift karna hai */
+    left: -55px; /* kitna side me shift karna hai */
     z-index: 10;
 }
 .doctor-strange img {
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 
@@ -521,9 +521,6 @@ h3{
         margin-right: 15px;
     }
 }
-
-
-
 
 
 
