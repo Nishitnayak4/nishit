@@ -26,7 +26,20 @@
     width: 100%;
     height: auto;
 }
-
+.hammer{
+    position: fixed; /* scrolling pe bhi fixed rahe */
+    bottom: -299px; /* upar se distance */
+    left: 626px; /* right se distance */
+    z-index: 10; /* sabse upar */
+    width: 839px; /* hammer ka size */
+    height: auto;
+    background-color: transparent;
+    transform: rotate(180deg); /* upside down */
+}
+.hammer img{
+    width: 100%;
+    height: auto;
+}
     /* Phone screen ke liye responsive design */
 @media (max-width: 702px) {
     .thor-hammer {
