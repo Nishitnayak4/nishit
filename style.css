@@ -51,12 +51,26 @@
 
 @media (max-width: 480px) {
     .thor-hammer {
-        top: 77px;
+       top: 77px;
         right: -10px;
         width: 441px;   /* aur chhota for small phones */
     }
 }
+@media (max-width: 702px) {
+    .hammer {
+        bottom: -149px;     /* thoda upar chhota gap */
+        left: 10px;   /* side se kam gap */
+        width: 80px;   /* chhota size */
+    }
+}
 
+@media (max-width: 480px) {
+    .hammer {
+        bottom: 77px;
+        left: -10px;
+        width: 441px;   /* aur chhota for small phones */
+    }
+}
 
 
 
