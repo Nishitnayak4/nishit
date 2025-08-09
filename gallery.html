@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marvel Gallery</title>
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: url('9ae68e29-498c-4480-aa3b-93a27fe1894b.png') no-repeat center center/cover;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    /* Navbar space */
+    .nav-space {
+        height: 80px;
+    }
+
+    /* Gallery wrapper */
+    .gallery-wrapper {
+        height: calc(100vh - 80px);
+        overflow: hidden;
+        width: 90%;
+        margin: auto;
+        position: relative;
+    }
+
+    /* Gallery container for scrolling */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        animation: scrollUp 15s linear infinite;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+    }
+
+    /* Marquee keyframes */
+    @keyframes scrollUp {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50%); }
+    }
+
+    /* Duplicate content for seamless loop */
+    .gallery-inner {
+        display: contents;
+    }
+</style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+
+<!-- Navbar placeholder -->
+<nav>
+           
+            <div class="nav-links" id="navLinks">  
+                <a class="fa fa-x" onclick="hideMenu()"></a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">onepiece</a></li>
+                    <li><a href="team.html">naruto</a></li>
+                    <li><a href="event.html">Bleach</a></li>
+                    <li><a href="gallery.html">haiyaku</a></li>
+                </ul>
+            </div>
+            <a class="fa fa-bar" onclick="showMenu()">=</a>
+    <div class="share-icon"></div>
+        </nav>
+
+<!-- Gallery -->
+<div class="gallery-wrapper">
+    <div class="gallery">
+        <div class="gallery-inner">
+            <img src="https://picsum.photos/id/101/200" alt="">
+            <img src="https://picsum.photos/id/102/200" alt="">
+            <img src="https://picsum.photos/id/103/200" alt="">
+            <img src="https://picsum.photos/id/104/200" alt="">
+            <img src="https://picsum.photos/id/105/200" alt="">
+            <img src="https://picsum.photos/id/106/200" alt="">
+            <img src="https://picsum.photos/id/103/200" alt="">
+            <img src="https://picsum.photos/id/104/200" alt="">
+            <img src="https://picsum.photos/id/105/200" alt="">
+            <img src="https://picsum.photos/id/106/200" alt="">
+            <img src="https://picsum.photos/id/105/200" alt="">
+            <img src="https://picsum.photos/id/106/200" alt="">
+            <img src="https://picsum.photos/id/103/200" alt="">
+            <img src="https://picsum.photos/id/104/200" alt="">
+            <img src="https://picsum.photos/id/105/200" alt="">
+            <img src="https://picsum.photos/id/106/200" alt="">
+        </div>
+        <!-- duplicate for infinite scroll -->
+        <div class="gallery-inner">
+            <img src="https://picsum.photos/id/101/200" alt="">
+            <img src="https://picsum.photos/id/102/200" alt="">
+            <img src="https://picsum.photos/id/103/200" alt="">
+            <img src="https://picsum.photos/id/104/200" alt="">
+            <img src="https://picsum.photos/id/105/200" alt="">
+            <img src="https://picsum.photos/id/106/200" alt="">
+            <img src="https://picsum.photos/id/103/200" alt="">
+            <img src="https://picsum.photos/id/104/200" alt="">
+            <img src="https://picsum.photos/id/105/200" alt="">
+            <img src="https://picsum.photos/id/106/200" alt="">
+            <img src="https://picsum.photos/id/106/200" alt="">
+           
+        </div>
+    </div>
+</div>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+</body>
+</html>
