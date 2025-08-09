@@ -12,6 +12,40 @@
     position: relative;
     overflow: hidden;
 }
+.thor-hammer {
+    position: fixed; /* scrolling pe bhi fixed rahe */
+    top: -150px; /* upar se distance */
+    right: 626px; /* right se distance */
+    z-index: 999; /* sabse upar */
+    width: 839px; /* hammer ka size */
+    height: auto;
+    background-color: transparent;
+}
+
+.thor-hammer img {
+    width: 100%;
+    height: auto;
+}
+
+    /* Phone screen ke liye responsive design */
+@media (max-width: 702px) {
+    .thor-hammer {
+        top: -149px;     /* thoda upar chhota gap */
+        right: 10px;   /* side se kam gap */
+        width: 80px;   /* chhota size */
+    }
+}
+
+@media (max-width: 480px) {
+    .thor-hammer {
+        top: 77px;
+        right: -10px;
+        width: 441px;   /* aur chhota for small phones */
+    }
+}
+
+
+
 
 nav {
     position: relative;
