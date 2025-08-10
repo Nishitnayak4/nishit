@@ -304,22 +304,30 @@ h3{
 /*--------campus---------*/
 
 .campus{
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    
     text-align: center;
     padding-top: 50px;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/marvel-logo.jpg);
+    
 }
-
+.campus h1,p{
+    color: antiquewhite;
+}
 .campus-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;   
+           margin-top: -5%;
+    display: flex;
+    justify-content:center;
+    align-content:flex-start;
+    flex-wrap:wrap;
+    align-items:stretch;
+    margin-left: 10%;
+    flex-direction:row;
+
 }
 
 .campus-col img{
-    width: 100%;
+    width: 68%;
     display: block;
     }
 
