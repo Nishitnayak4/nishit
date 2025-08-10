@@ -41,7 +41,7 @@
     <img src="img/hammer.gif" alt="Thor Hammer"></div>
  
     <h1>Are you a Marvel fan?</h1>
-        <h2></h2>
+        <h2>Taarangan 2k25</h2>
         <h3>you can watch anime here</h3>
       <div class="hammer">
     <img src="img/hammer.gif" alt="Thor Hammer"></div>
@@ -98,29 +98,21 @@ Art? Vibes? Chaos? We’ve got it ALL✨</p>
         <div class="row">
               <div class="campus-col">
              <img  src="img/B2.jpg"> 
-                <div class="layer">
-                    <h3><a href="#"></a></h3>
-                </div>
+                
             </div>
              <div class="campus-col">
                <img src="img/quad.jpg"> 
-                <div class="layer">
-                    <h3><a href="#"></a></h3>
-                 </div>
+                
             </div>
         </div>
         <div class="row">
             <div class="campus-col">
                <img src="img/int1.jpg"> 
-                <div class="layer">
-                    <h3><a href="#"></a></h3>
-                 </div>
+               
             </div>
             <div class="campus-col">
                <img src="img/rec4.jpg"> 
-                <div class="layer">
-                    <h3><a href="#"></a></h3>
-                 </div>
+                
             </div>
         </div>
     </section>
@@ -167,7 +159,7 @@ Art? Vibes? Chaos? We’ve got it ALL✨</p>
  
 <!-------- footer ---------->
 
-<section class="footer">
+<!---<section class="footer">
         <h4>About these website</h4>
         <p>mojj karo mitro<br>THEY ALL ARE ILLEGAL.</p>
     <div class="icons">
@@ -175,7 +167,9 @@ Art? Vibes? Chaos? We’ve got it ALL✨</p>
     <a href="https://hianime.to/"><img src="icons/logo.png" alt=""></a>
     <a href=""><img src="icons/icons8-youtube-48.png"> </a>
 </div>
-</section> 
+</section> --->
+    
+    <div id="footer.html"></div>
     
     
     
@@ -192,7 +186,17 @@ Art? Vibes? Chaos? We’ve got it ALL✨</p>
     }
 </script> 
     
-    
+   <div id="footer-placeholder"></div>
+
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            })
+            .catch(error => console.error("Footer load nahi hua:", error));
+    </script>
+
     
     
     
