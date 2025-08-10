@@ -451,6 +451,10 @@ h3{
     font-weight: 600;
 }
 
+.footer p{
+    color: black
+}
+
 .icons .fa{
     color: #f44336;
     margin: 0 13px;
