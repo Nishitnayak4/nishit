@@ -309,7 +309,7 @@ header p {
         <img src="img/guardians-of-the-galaxy-marvel-studios.gif" alt="Tony Stark">
     </div>-->
 </section>
-    <section class="footer">
+   <!--- <section class="footer">
         <h4>About Us</h4>
         <p></p>
         <div class="icons">
@@ -318,7 +318,7 @@ header p {
             <a href="https://www.instagram.com/onepiece_staff/"> <i class="fa fa-instagram"></i></a>
         </div>
         <p>One <i class="fa fa-heart-o"></i> piece</p>
-</section>  
+</section>  -->
     
     
     
@@ -333,6 +333,16 @@ header p {
         navLinks.style.right = "-200px";
     }
 </script> 
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch("footer1.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            })
+            .catch(error => console.error("Couldn't load bantai:", error));
+    </script>
 
 </body>
 </html>
